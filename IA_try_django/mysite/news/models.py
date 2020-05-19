@@ -7,9 +7,6 @@ class Reporter(models.Model):
     def __str__(self):
         return self.full_name
 
-    # def get_absolute_url(self):
-    #     return reverse("news:year_archive", kwargs={"pk": self.pk})
-    
 
 class Article(models.Model):
     pub_date = models.DateField()
@@ -21,5 +18,5 @@ class Article(models.Model):
         return self.headline
     
     def get_absolute_url(self):
-        return reverse("news:year_archive", args=(self.pub_date.year,))
+        return reverse("news:detail", args=(self.id,))
     

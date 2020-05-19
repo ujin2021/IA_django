@@ -3,19 +3,19 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <p>Article Archives for {{ year|date:"Y" }}<p>
+    <p style="font-size:40px;">Article Archives for {{ year|date:"Y" }}<p>
     <ul>
         {% for date in date_list %}
-        <li>
-            <a herf="{% url 'news:month_archive' year|date:'Y' date|date:'m' %}">{{ date|date:'F'}}</a>
-        </li>
+            <a href="{% url 'news:month_archive' year|date:'Y' date|date:'m' %}">
+            <p style="font-size:25px;">Month:&nbsp;{{ date|date:'F' }}</p></a>
         {% endfor %}
     </ul>
     <div></div>
     <div>
         <ul>
             {% for article in object_list%}
-            <li><strong>{{article.pub_date|date:"Y-m-d"}}&nbsp;&nbsp;&nbsp;<a href="{{ article.get_absolute_url }}"></a></li>
+            <li><strong>{{article.pub_date|date:"Y/m/d"}}&nbsp;&nbsp;&nbsp;
+            <a href="{{ article.get_absolute_url }}">{{ article.headline }}</strong></a></li>
             {% endfor %}
         </ul>
     </div>

@@ -1,0 +1,12 @@
+#headline {
+    background-color: aliceblue;
+    background-size: 20px;
+    font-size: xx-large;
+}
+#content {
+    color: purple;
+    font-size: x-large;
+}
+.content{
+    background-color: azure;
+}
