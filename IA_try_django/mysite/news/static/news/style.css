@@ -10,3 +10,9 @@
 .content{
     background-color: azure;
 }
+#archives{
+    font-size: 40px;
+}
+#month{
+    font-size: 25px;
+}

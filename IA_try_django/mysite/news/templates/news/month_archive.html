@@ -1,8 +1,10 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/style.css' %}">
 <head>
     <meta charset="utf-8">
 </head>
 <body>
-    <p style="font-size:40px;">Article Archives for {{ month|date:"N, Y"}}</p>
+    <p id="archives">Article Archives for {{ month|date:"N, Y"}}</p>
     <ul>
         {% for date in date_list %}
         <a href="{% url 'news:day_archive' date|date:'Y' month|date:'m' date|date:'d' %}">{{ date|date:'d' }}</a>

@@ -1,13 +1,14 @@
-
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/style.css' %}">
 <head>
     <meta charset="utf-8">
 </head>
 <body>
-    <p style="font-size:40px;">Article Archives for {{ year|date:"Y" }}<p>
+    <p id="archives">Article Archives for {{ year|date:"Y" }}<p>
     <ul>
         {% for date in date_list %}
             <a href="{% url 'news:month_archive' year|date:'Y' date|date:'m' %}">
-            <p style="font-size:25px;">Month:&nbsp;{{ date|date:'F' }}</p></a>
+            <p id="month">Month:&nbsp;{{ date|date:'F' }}</p></a>
         {% endfor %}
     </ul>
     <div></div>
