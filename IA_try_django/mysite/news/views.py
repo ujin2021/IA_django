@@ -9,6 +9,11 @@ from django.views.generic.dates import *
 
 from .models import Article, Reporter
 
+class Archive(ArchiveIndexView):
+    model = Article
+    date_field = "pub_date"
+    template_name = "news/archive.html"
+
 class ArticleDetail(DetailView):
     model = Article
     template_name = 'news/detail.html'

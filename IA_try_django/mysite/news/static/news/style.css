@@ -1,18 +1,18 @@
 #headline {
-    background-color: aliceblue;
-    background-size: 20px;
-    font-size: xx-large;
+    font-size: 45px;
 }
 #content {
-    color: purple;
-    font-size: x-large;
-}
-.content{
-    background-color: azure;
+    font-size: 20px;
 }
 #archives{
     font-size: 40px;
 }
+#year{
+    font-size: 30px;
+}
 #month{
     font-size: 25px;
+}
+#day{
+    font-size: 20px;
 }

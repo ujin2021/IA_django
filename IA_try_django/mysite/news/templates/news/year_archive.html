@@ -5,19 +5,16 @@
 </head>
 <body>
     <p id="archives">Article Archives for {{ year|date:"Y" }}<p>
-    <ul>
-        {% for date in date_list %}
-            <a href="{% url 'news:month_archive' year|date:'Y' date|date:'m' %}">
-            <p id="month">Month:&nbsp;{{ date|date:'F' }}</p></a>
-        {% endfor %}
-    </ul>
-    <div></div>
-    <div>
+    {% for date in date_list %}
+        <a href="{% url 'news:month_archive' year|date:'Y' date|date:'m' %}">
+        <p id="month">{{ date|date:'F' }}</p></a>
         <ul>
-            {% for article in object_list%}
-            <li><strong>{{article.pub_date|date:"Y/m/d"}}&nbsp;&nbsp;&nbsp;
-            <a href="{{ article.get_absolute_url }}">{{ article.headline }}</strong></a></li>
-            {% endfor %}
+        {% for article in object_list%}
+            {% if date|date:'m' == article.pub_date|date:"m" %}
+                <li><strong>{{article.pub_date|date:"Y/m/d"}}&nbsp;&nbsp;&nbsp;
+                <a href="{{ article.get_absolute_url }}">{{ article.headline }}</strong></a></li>
+            {% endif %}
+        {% endfor %}
         </ul>
-    </div>
+    {% endfor %}
 </body>

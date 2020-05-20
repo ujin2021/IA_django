@@ -6,13 +6,15 @@
     <img src="{% static 'news/images/sitelogo.png' %}">
 </head>
 <body>
-    <p id="headline">{{ object.headline }}</p>
-    <div class="content">
+    <p id="headline"><strong>"{{ object.headline }}"</strong></p>
+    <hr>
+    <div>
         <p id="content">{{ object.content }}</p>
     </div>
     <br>
+    <hr>
     <div>
-    <p> {{ object.pub_date}} </p>
-    <p> reporter:&nbsp;{{ object.reporter }} </p>
+    <span> {{ object.pub_date}} </span><br>
+    <span> reporter:&nbsp;{{ object.reporter }} </span>
     </div>
 </body>
