@@ -12,21 +12,22 @@
 #### def get_absolute_url(self) - added for code conciseness(when using detail view) <br> 
 ## urls.py
 ### localhost:8000/news/articles/ <br>
-> show list of years. 
-> you can move to year archives by click year. <br>
+* show list of years. 
+* you can move to year archives by click year. <br>
 ### localhost:8000/news/articles/[year]/ <br> 
-> show list of articles by year. <br>
-> you can move to month archives by click month. <br>
-> you can directly read article by click headline. <br>
+* show list of articles by year. <br>
+* you can move to month archives by click month. <br>
+* you can directly read article by click headline. <br>
 ### localhost:8000/news/articles/[year]/[month]/ <br>
-> show list of articles by month/year. <br>
-> you can move to day archives by click day. <br>
-> you can directly read article by click headline. <br>
+* show list of articles by month/year. <br>
+* you can move to day archives by click day. <br>
+* you can directly read article by click headline. <br>
 ### localhost:8000/news/articles/[year]/[month]/[day]/ <br>
-> show list of articles by day/month/year. <br>
-> you can move to article by click headline. <br>
+* show list of articles by day/month/year. <br>
+* you can move to article by click headline. <br>
 
 <hr>
+
 ### 실행 화면
 #### IA_try_django/images
 
