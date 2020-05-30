@@ -29,7 +29,7 @@ class BookAdmin(admin.ModelAdmin):
 
 @admin.register(BookInstance)
 class BookInstanceAdmin(admin.ModelAdmin):
-    list_display = ('book', 'status', 'due_back', 'id')
+    list_display = ('book', 'status', 'borrower', 'due_back', 'id')
     # filters that will be displayed in sidebar
     list_filter = ('status', 'due_back')
     # grouping of fields into sections - in add view
