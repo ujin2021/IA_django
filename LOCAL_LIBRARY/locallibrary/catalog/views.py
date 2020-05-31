@@ -33,12 +33,15 @@ def index(request):
 
 from django.views import generic
 
+class UserDetail(generic.DetailView):
+    template_name = 'user_detail.html'
+
 class BookListView(generic.ListView):
     model = Book
     # context_object_name = 'book_list'
     # queryset = Book.objects.all()
     # template_name = 'book_list.html'
-    paginate_by = 3
+    paginate_by = 10
 
 class BookDetailView(generic.DetailView):
     model = Book
@@ -84,7 +87,7 @@ from django.contrib.auth.decorators import permission_required
 
 from .forms import RenewBookForm
 
-@permission_required('catalog.can_makr_returned')
+@permission_required('catalog.can_mark_returned')
 def renew_book_librarian(request, pk):
     """View function for renewing a specific BookInstance by librarian."""
     book_instance = get_object_or_404(BookInstance, pk=pk)

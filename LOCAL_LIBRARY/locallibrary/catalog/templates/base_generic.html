@@ -16,12 +16,15 @@
 <body>
 
 <div class="container-fluid">
-
 <div class="row">
   <div class="col-sm-2">
   {% block sidebar %}
+  <div>
+    {% load static %}
+    <a href="{% url 'index' %}">
+    <img src="{% static "images/local_library_logo.png"%}" alt="home" style="width:200px;height:60px;"/></a>
+  </div>
   <ul class="sidebar-nav">
-    <li><a href="{% url 'index' %}">Home</a></li>
     <li><a href="{% url 'books' %}">All books</a></li>
     <li><a href="{% url 'authors' %}">All authors</a></li>
   </ul>
@@ -31,8 +34,9 @@
       <li>User: {{ user.get_username }}</li>
       <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
       <li><a href="{% url 'logout' %}?next={{request.path}}">Logout</a></li>
+      <li><a href="{% url 'password_change'%}?next={{request.path}}">Change password</a></li>
     {% else %}
-      <li><a href="{% url 'login' %}?next={{request.path}}">Login</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
       <li><a href="{% url 'signup'%}?next={{request.path}}">Sign up</a></li>
     {% endif %}
   </ul>
