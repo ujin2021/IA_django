@@ -1,6 +1,6 @@
 {% extends "base_generic.html" %}
 {% block content %}
-<h1 class="all_title"> Title: {{ book.title }}</h1>
+<h3 class="all_title"> {{ book.title }} </h3>
 <p><strong>Author:</strong> <a href="{% url 'author-detail' book.author.pk %}">{{ book.author }}</a></p>
 <p><strong>Summary:</strong>{{ book.summary }}</p>
 <p><strong>ISBN:</strong>{{ book.isbn }}</p>
