@@ -121,6 +121,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Author
 
+# staff 관리자로 로그인시, author/book list에서 create 버튼을 만들고, 
+# author/book detail에서 delete, update버튼을 만들고 싶다면?
 class AuthorCreate(PermissionRequiredMixin, CreateView):
     model = Author
     fields = '__all__'
