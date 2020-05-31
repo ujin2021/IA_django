@@ -33,10 +33,12 @@
 # LOCAL_LIBRARY/locallibrary
  > document) https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Tutorial_local_library_website <br>
  > 실행화면) LOCAL_LIBRARY/images
-## catalog, account
+## app <catalog, account>
 * show all books, authors <br>
 * you can sign up or login <br>
 * user / staff(librarian) / superuser <br>
+* if you click logo image, move to index.html(home)
+
 ### login - user
 * you can see borrowed books <br>
 * you can change your password <br>
