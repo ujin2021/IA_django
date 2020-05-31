@@ -1,7 +1,7 @@
 {% extends "base_generic.html" %}
 {% comment %} base_generic.html 의 해당하는 block을 부분을 밑에 코드로 overriding {% endcomment %}
 {% block content %} 
-<h1>Local Library Home</h1>
+<h1 class="all_title">Local Library Home</h1>
 
 <p>Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a 
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website">tutorial example</a> on the Mozilla Developer Network.</p>
@@ -11,7 +11,7 @@
     <img src="{% static "images/local_library_logo.png"%}" alt="logo image" style="width:555px;height:200px;"/>
 </div>
 {%endcomment%}
-<h2>Dynamic content</h2>
+<h2 class="all_title">Dynamic content</h2>
 <p> The libarary has the following record counts:</p>
 <ul>
     <li><strong>Books:</strong> {{num_books}}</li>

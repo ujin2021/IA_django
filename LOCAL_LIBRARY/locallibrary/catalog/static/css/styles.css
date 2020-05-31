@@ -3,3 +3,7 @@
     padding: 0;
     list-style: none;
 }
+.all_title{
+    background: linear-gradient(to top, #b4e7f8 50%, transparent 50%);
+    width: 360px;
+}
