@@ -1,4 +1,4 @@
-# IA_try_django/
+# IA_try_django/mysite
 ## <Django Tutorial - polls>
   ### commit each part of django document - making polls app
   ### django_document) https://docs.djangoproject.com/ko/3.0/intro/overview/
@@ -34,8 +34,8 @@
 
 <hr>
 
-# LOCALLIBRARY/
-## <locallibrary>
+# LOCAL_LIBRARY/locallibrary
+## <catalog>
   ### document) https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Tutorial_local_library_website
   
 
