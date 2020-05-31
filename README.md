@@ -1,16 +1,17 @@
 # IA_try_django/mysite
 ## <Django Tutorial - polls>
-  ### commit each part of django document - making polls app
-  ### django_document) https://docs.djangoproject.com/ko/3.0/intro/overview/
+  > commit each part of django document - making polls app
+  > django_document) https://docs.djangoproject.com/ko/3.0/intro/overview/
+  > 실행화면) IA_try_django/images
   
 <hr>
 
 ## <Django Tutorial - news>
   
 ### admin.py
-#### make for managing Articles and Reporters
+> make for managing Articles and Reporters
 ### models.py
-#### def get_absolute_url(self) - added for code conciseness(when using detail view) <br> 
+> def get_absolute_url(self) - added for code conciseness(when using detail view) <br> 
 ### urls.py
 #### localhost:8000/news/articles/ <br>
 * show list of years. 
@@ -29,15 +30,24 @@
 
 <hr>
 
-### 실행 화면
-#### IA_try_django/images
-
-<hr>
-
 # LOCAL_LIBRARY/locallibrary
-## <catalog>
-  ### document) https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Tutorial_local_library_website
-  
+ > document) https://developer.mozilla.org/ko/docs/Learn/Server-side/Django/Tutorial_local_library_website <br>
+ > 실행화면) LOCAL_LIBRARY/images
+## catalog, account
+* show all books, authors <br>
+* you can sign up or login <br>
+* user / staff(librarian) / superuser <br>
+### login - user
+* you can see borrowed books <br>
+* you can change your password <br>
+* you can logout <br>
+
+### login - staff(librarian)
+* you can see borrowed books <br>
+* Add <staff> category for staff <br>
+* you can see all borrowed books <br>
+* you can renew books, authors <br>
+* you can renew due_back of users <br>
 
 <hr>
 
